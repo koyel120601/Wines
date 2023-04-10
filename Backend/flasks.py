@@ -50,6 +50,7 @@ def home():
         output ="Bad Wine Quality"
         
     response = jsonify({'output': output})
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     response.headers.add("Access-Control-Allow-Origin", "*")
     return response
 
