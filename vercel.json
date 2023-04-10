@@ -1,0 +1,46 @@
+{
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+  This will add the Access-Control-Allow-Origin header to all responses from the Vercel server.
+  
+  
+  
+  
+  Ahana Chatterjee
+  i dont have file named vercel.json
+  If you don't have a vercel.json file, you can create one in the root directory of your project.
+  
+  Here's an example vercel.json file that allows CORS from all origins:
+  
+  json
+  Copy code
+  {
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+  You can modify this file to match your specific requirements.
+  
+  
+  
+  
+  
+  
