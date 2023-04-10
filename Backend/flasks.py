@@ -48,8 +48,10 @@ def home():
         output ="Good Wine Quality"
     else:
         output ="Bad Wine Quality"
-
-    return jsonify(output)
+        
+    response = jsonify({'output': output})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 
