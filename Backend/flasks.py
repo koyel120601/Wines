@@ -12,6 +12,12 @@ import pickle
 #creating an instance of flask
 app = Flask(__name__)
 CORS(app)
+from flask import cross_origin
+
+@cross_origin()
+@app.route('/')
+def index ();
+return 'Cors enabled'
 
 
 @app.route("/",methods=['POST'])
